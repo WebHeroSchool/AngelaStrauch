@@ -359,7 +359,7 @@ h1{
  }
  /*убираем горизонтальный скролл*/
  html, body { max-width: 100%; overflow-x: hidden; }
-}
+
 /*Создание анимации*/
 @keyframes move {
   0%{
