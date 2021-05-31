@@ -17,7 +17,7 @@ h1{
   padding:51px 0 1px 0;
 }
 .main__title-text_highlight{
-  background: #ECF3FF;
+  background:linear-gradient(to top,#ECF3FF 82%, #fff 82% 100%);
 }
 .main__subtitel{
   margin:0 88px 42px 0;
@@ -32,11 +32,33 @@ h1{
   text-decoration: none;
   border-radius: 4px;
   transition: opacity.5s;
+  animation: main__button 3s infinite;
 }
+
+@keyframes main__button {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+	50% {
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
 .main__button:hover{
   opacity: .5;
 }
 .menu__item{
+  padding: 0 13px;
+}
+.header{
+  padding: 40px 0;
+  display:flex;
+  justify-content: space-between;
+}
+.main-section{
   transition: opacity .5s;
   position: relative;
   margin-right: 23px;
@@ -66,6 +88,17 @@ h1{
   display: inline-block;
 }
 .logo{
+  position: relative;
+  padding: 40px 0;
+  padding-left: 44px;
+  font: 24px/31px pt_serif,arial,helvetica,sans-serif;
+}
+
+.logo__circle{
+  width: 190px;
+  height: 35px;
+  background: url('img/logo.svg');
+
   /*position: relative;*/
 
   /*padding-left: 44px;*/
@@ -75,7 +108,13 @@ h1{
   background: url('img/logo.svg');
 }
 
+.center-img{
+  display: block;
+  margin: 10px 0 -10px 450px;
+}
+
 /*.logo__circle{
+
   position: absolute;
   left:0;
   top: 50%;
@@ -89,6 +128,9 @@ h1{
   left: 8px;
   top:56%;
   background: #C8DBFB;
+}
+.logo__circle_color_dark-blue{
+  background: #0056EC;
 }
 .logo__circle_color_dark-blue{
   background: #0056EC;
@@ -129,7 +171,6 @@ h1{
   size:cover;
 }
 
-
 @media(max-width:1366px){
   .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
     display: none;
@@ -151,7 +192,7 @@ h1{
      background-position: 414px;
    }
    .main__subtitel{
-     font: 18px/19px Roboto,arial,helvetica,sans-serif;
+     font: 18px/20px Roboto,arial,helvetica,sans-serif;
      margin: 35px 160px 41px 0px;
    }
    .menu{
@@ -175,7 +216,11 @@ h1{
    .logo{
      margin-left: 0px;
    }
-}
+  
+   .main__title1{
+     margin-left:-13px;
+   }
+  
 @media(max-width:1024px){
   .logo{
     padding:0px;
@@ -213,7 +258,7 @@ h1{
 }
   .header{
     margin-bottom: 4px;
-    width: 99%;
+    width: 87%;
   }
   .menu__item {
     font-family: Roboto,arial,helvetica,sans-serif;
@@ -228,7 +273,7 @@ h1{
   .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
     display: none;
    }
-}
+
 
 @media(max-width:768px){
   .menu{
@@ -282,12 +327,12 @@ h1{
   width:26px;
   height: 23px;
   cursor:pointer;
-  z-index:1;
+  z-index:101;
 }
 /*добавляем гамбугер*/
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after{
+.menu__btn >span,
+.menu__btn >span::before,
+.menu__btn >span::after{
   display: block;
   position: absolute;
   width: 100%;
@@ -317,6 +362,7 @@ h1{
   text-align: center;
   background-color: #fff;
   box-shadow: 1px 0px 6px rgba(0,0,0, .2);
+  z-index: 100;
 }
 /*элементы меню*/
 .menu__itemb{
