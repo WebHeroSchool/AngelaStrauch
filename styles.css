@@ -31,11 +31,33 @@ h1{
   text-decoration: none;
   border-radius: 4px;
   transition: opacity.5s;
+  animation: main__button 3s infinite;
 }
+
+@keyframes main__button {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+	50% {
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
 .main__button:hover{
   opacity: .5;
 }
 .menu__item{
+  padding: 0 13px;
+}
+.header{
+  padding: 40px 0;
+  display:flex;
+  justify-content: space-between;
+}
+.main-section{
   transition: opacity .5s;
   position: relative;
   margin-right: 23px;
@@ -65,6 +87,17 @@ h1{
   display: inline-block;
 }
 .logo{
+  position: relative;
+  padding: 40px 0;
+  padding-left: 44px;
+  font: 24px/31px pt_serif,arial,helvetica,sans-serif;
+}
+
+.logo__circle{
+  width: 190px;
+  height: 35px;
+  background: url('img/logo.svg');
+
   /*position: relative;*/
 
   /*padding-left: 44px;*/
@@ -74,7 +107,13 @@ h1{
   background: url('img/logo.svg');
 }
 
+.center-img{
+  display: block;
+  margin: 10px 0 -10px 450px;
+}
+
 /*.logo__circle{
+
   position: absolute;
   left:0;
   top: 50%;
@@ -88,6 +127,9 @@ h1{
   left: 8px;
   top:56%;
   background: #C8DBFB;
+}
+.logo__circle_color_dark-blue{
+  background: #0056EC;
 }
 .logo__circle_color_dark-blue{
   background: #0056EC;
@@ -229,6 +271,110 @@ h1{
    }
 }
 
+@media(max-width:1366px){
+  .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
+    display: none;
+   }
+   .header{
+     margin-bottom:0px;
+     padding:32px 153px 40px 1px;
+   }
+   .main__title{
+     margin:0 0 44px;
+     font: 700 50px/64px PT Serif,arial,helvetica,sans-serif;
+     padding-top:56px 0 0 0;
+     margin-top:8px;
+   }
+   .main{
+     padding: 39px 49% 115px 0;
+     height: 443px;
+     background-size: 520px;
+     background-position: 414px;
+   }
+   .main__subtitel{
+     font: 18px/20px Roboto,arial,helvetica,sans-serif;
+     margin: 35px 160px 41px 0px;
+   }
+   .menu{
+     margin-left: auto;
+     margin-top: 5px;
+     padding: 3px;
+   }
+   .wrapper{
+     margin: auto 210px;
+     width: 80%;
+   }
+   .menu__item{
+     margin-right: 22px;
+     font: 500 14px/22px Roboto,arial,helvetica,sans-serif;
+   }
+   .main__button{
+    font: 14px/20px Roboto,arial,helvetica,sans-serif;
+    padding: 12px 25px 12px 18px;
+    margin:2px 0 0 1px;
+   }
+   .logo{
+     margin-left: 0px;
+   }
+   .main__title1{
+     margin-left:-13px;
+   }
+}
+@media(max-width:1024px){
+  .logo{
+    padding:0px;
+    margin-left: -5px;
+  }
+  .wrapper{
+    margin: auto 42px;
+    width: 93%;
+  }
+  .main{
+    padding: 41px 68% 116px 0px;
+    height: 436px;
+    background-size: 516px;
+    margin-right: -95px;
+    margin-left: -2px;
+  }
+  .main__title {
+    font: 700 50px/64px PT Serif,arial,helvetica,sans-serif;
+    margin:2px -4px 34px -2px;
+}
+.main__subtitel {
+    margin: 40px 45px 30px -2px;
+    font: 18px/23px Roboto,arial,helvetica,sans-serif;
+}
+.main__button {
+    display: inline-block;
+    font: 14px/21px Roboto,arial,helvetica,sans-serif;
+    color: #fff;
+    padding: 12px 29px 11px 14px;
+    background: #0056EC;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: opacity.5s;
+    margin: 9px 0 0 -2px;
+}
+  .header{
+    margin-bottom: 4px;
+    width: 87%;
+  }
+  .menu__item {
+    font-family: Roboto,arial,helvetica,sans-serif;
+    font-size: 14px;
+    margin-right: 22px;
+}
+  .menu{
+    margin-right:-109px;
+    margin-top: 6px;
+    padding: 0px;
+  }
+  .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
+    display: none;
+   }
+}
+
+
 @media(max-width:768px){
   .menu{
     display: none;
@@ -281,12 +427,12 @@ h1{
   width:26px;
   height: 23px;
   cursor:pointer;
-  z-index:1;
+  z-index:101;
 }
 /*добавляем гамбугер*/
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after{
+.menu__btn >span,
+.menu__btn >span::before,
+.menu__btn >span::after{
   display: block;
   position: absolute;
   width: 100%;
@@ -316,6 +462,7 @@ h1{
   text-align: center;
   background-color: #fff;
   box-shadow: 1px 0px 6px rgba(0,0,0, .2);
+  z-index: 100;
 }
 /*элементы меню*/
 .menu__itemb{
