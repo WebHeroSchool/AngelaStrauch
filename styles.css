@@ -5,37 +5,6 @@ h1{
   font-family: Roboto, sans-serif;
 }
 .main{
-  padding:0 53% 100px 0;
-  background: top right no-repeat url(img/mainImg.svg);
-}
-.main__title{
-  margin:0 0 40px 0;
-  font: bold 50px/65px pt-serif,arial,helvetica,sans-serif;
-}
-
-.main__title-text_highlight{
-  background: #ECF3FF;
-}
-.main__subtitel{
-  margin:0 0 41px 0;
-  font: 18px/21px Roboto,arial,helvetica,sans-serif;
-}
-.main__button{
-  display: inline-block;
-  font: 14px/16px 'Roboto',arial,helvetica,sans-serif;
-  color: #fff;
-  padding: 14px 16px;
-  background: #0056EC;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: opacity.5s;
-}
-
-.main__button:hover{
-  opacity: .5;
-}
-
-.main{
   padding:39px 63% 115px 0;
   background: center right no-repeat url(img/mainImg.svg);
   height: 555px;
@@ -175,29 +144,9 @@ body{
 }
 .logo__circle_color_dark-blue{
   background: #0056EC;
-}*/
-
-/*.logo__circle{
-  position: absolute;
-  left:0;
-  top: 50%;
-  transform:translateY(-50%);
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  opacity: .7;
-}
-.logo__circle_color_blue{
-  left: 8px;
-  top:56%;
-  background: #C8DBFB;
 }
 .logo__circle_color_dark-blue{
   background: #0056EC;
-}
-.logo__circle_color_dark-blue{
-  background: #0056EC;
-}*/
 /*.menu{
   display: flex;
   align-items: center;
@@ -339,10 +288,6 @@ body{
 
 
 
-@media(max-width:1025px){
-  .logo{
-    padding:0px;
-  }
   .main{
     padding: 41px 52% 116px 0px;
     height: 444px;
@@ -360,31 +305,29 @@ body{
     display: inline-block;
     font: 14px/23px 'Roboto',arial,helvetica,sans-serif;
     color: #fff;
-    padding: 15px 26px 11px 20px;
+
     background: #0056EC;
     text-decoration: none;
     border-radius: 4px;
     transition: opacity.5s;
 }
   .header{
-    margin-bottom:0;
+
   }
   .menu__item {
     font-family: 'Roboto',arial,helvetica,sans-serif;
     font-size: 14px;
-    margin-right: 23px;
+
 }
   .menu{
     margin-left: auto;
     margin-top: 7px;
+
   }
   .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
     display: none;
    }
-  .wrapper{
-    margin: auto;
-    width: 93%;
-  }
+
 }
 @media(max-width:1366px){
   .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
@@ -410,7 +353,9 @@ body{
    }
    .menu{
      margin-left: 284px;
+
      padding: 6px;
+
    }
    .wrapper{
      margin: auto 210px;
@@ -445,7 +390,7 @@ body{
     margin-top: -26px;
     width: 88%;
   }
-  .main__title{
+  .main__titel{
     margin:19px 39px 0px 1px;
     font: bold 30px/39px PT serif,arial,helvetica,sans-serif;
   }
