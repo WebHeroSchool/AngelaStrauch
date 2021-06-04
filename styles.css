@@ -50,7 +50,6 @@ body{
 	}
 }
 
-
 .main__button:hover{
   opacity: .5;
 }
@@ -478,10 +477,11 @@ body{
    .logo{
      margin-left: 0px;
    }
+  
    .main__title1{
      margin-left:-13px;
    }
-}
+  
 @media(max-width:1024px){
   .logo{
     padding:0px;
@@ -527,14 +527,13 @@ body{
     margin-right: 22px;
 }
   .menu{
-    margin-right:-109px;
-    margin-top: 6px;
-    padding: 0px;
+    margin-left: auto;
+    margin-top: 4px;
+    padding: 2px;
   }
   .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
     display: none;
    }
-}
 
 @media(max-width:768px){
   .menu{
