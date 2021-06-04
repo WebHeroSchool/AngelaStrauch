@@ -22,11 +22,13 @@ h1{
   background:linear-gradient(to top,#ECF3FF 82%, #fff 82% 100%);
 }
 .main__subtitel{
+
   margin:-2px 88px 42px 0;
   font: 22px/23px Roboto,arial,helvetica,sans-serif;
 }
 .main__subtitel1{
   margin: -38px 88px 0px 0;
+
   font: 22px/23px Roboto,arial,helvetica,sans-serif;
 }
 
@@ -96,14 +98,6 @@ body{
   display: inline-block;
 }
 .logo{
-
-  /*position: relative;*/
-  /*padding-left: 44px;*/
-  /*font: bold 24px/31px pt_serif,arial,helvetica,sans-serif;*/
-
-  width: 190px;
-  height: 35px;
-  background: url('img/logo.svg');
 
 
   width: 189px;
@@ -271,7 +265,6 @@ body{
      margin-left: 0px;
    }
 
-
 @media(max-width:1024px){
   .logo{
     padding:0px;
@@ -282,18 +275,20 @@ body{
     width: 93%;
   }
   .main{
-    padding: 41px 68% 116px 0px;
+    padding: 41px 100p 116px 0px;
     height: 436px;
     background-size: 516px;
-    margin-right: -95px;
+    margin-right:
     margin-left: -2px;
   }
   .main__title {
     font: 700 50px/64px PT Serif,arial,helvetica,sans-serif;
     margin:2px -4px 34px -2px;
 }
-.main__subtitel {
+
+
     margin: 40px 45px 0px -2px;
+
     font: 18px/23px Roboto,arial,helvetica,sans-serif;
 }
 .main__subtitel1{
@@ -361,10 +356,8 @@ body{
   .main__title1{
     margin-left:-9px;
   }
-  .main__subtitel{
-    margin:32px 37px 0 4px;
-    font: 500 16px/19px Roboto,arial,helvetica,sans-serif;
-    text-align-last: start;
+
+
   }
 
   .main__subtitel1{
@@ -406,7 +399,7 @@ body{
   display: block;
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: #0056EC;
 }
 .menu__btn > span::before{
@@ -514,4 +507,7 @@ body{
   animation-iteration-count: infinite;
   animation-fill-mode: none;
   animation-play-state: running;
+}
+.center-img{
+  display:none;
 }
