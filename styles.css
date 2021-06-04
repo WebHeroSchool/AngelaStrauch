@@ -98,22 +98,17 @@ body{
 .main-section{
   transition: opacity .5s;
   position: relative;
-
-
-  margin-right: 26px;
-  text-decoration: none;
-  font: 500 18px/21px Roboto,arial,helvetica,sans-serif;
-  margin-right: 27px;
-  text-decoration: none;
-  font: 500 18px/22px Roboto,arial,helvetica,sans-serif;
   color:#000
 }
-.header{
+
+  
+.main-section{
   padding: 32px 2px 40px 1px;
   display:flex;
   justify-content: space-between;
   margin-bottom: 100px;
   }
+
 .wrapper{
   margin:auto 187px;
   width:80%;
