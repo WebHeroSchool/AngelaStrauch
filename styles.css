@@ -141,9 +141,7 @@ body{
 }
 .logo__circle_color_dark-blue{
   background: #0056EC;
-}
-.logo__circle_color_dark-blue{
-  background: #0056EC;
+
 /*.menu{
   display: flex;
   align-items: center;
@@ -256,6 +254,7 @@ body{
    }
    .main__subtitel{
      font: 18px/19px Roboto,arial,helvetica,sans-serif;
+
      margin: 35px 160px 41px 0px;
    }
    .menu{
