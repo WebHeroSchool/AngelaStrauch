@@ -34,6 +34,10 @@ h1{
   animation: main__button 3s infinite;
 }
 
+body{
+  display: block;
+  margin: 8px;
+  
 @keyframes main__button {
 	0% {
 		transform: scale3d(1, 1, 1);
@@ -61,29 +65,31 @@ h1{
 .main-section{
   transition: opacity .5s;
   position: relative;
-  margin-right: 23px;
-  text-decoration: none;
-  font: 500 18px/22px Roboto,arial,helvetica,sans-serif;
   color:#000
 }
-.header{
+
+  
+.main-section{
   padding: 32px 2px 40px 1px;
   display:flex;
   justify-content: space-between;
   margin-bottom: 100px;
   }
+
 .wrapper{
   margin:auto 187px;
   width:80%;
 }
 .menu{
   display: inline-block;
+
   margin-left: auto;
   margin-top: 6px;
 }
 .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
   display: none;
  }
+
 .logo{
   display: inline-block;
 }
@@ -103,6 +109,12 @@ h1{
 
   /*padding-left: 44px;*/
   /*font: bold 24px/31px pt_serif,arial,helvetica,sans-serif;*/
+
+  width: 190px;
+  height: 35px;
+  background: url('img/logo.svg');
+
+
   width: 189px;
   height: 35px;
   background: url('img/logo.svg');
@@ -128,6 +140,7 @@ h1{
   left: 8px;
   top:56%;
   background: #C8DBFB;
+
 }
 .logo__circle_color_dark-blue{
   background: #0056EC;
@@ -274,14 +287,7 @@ h1{
 }
 
 
-@media(max-width:1024px){
-  .logo{
-    padding:0px;
-  }
-  .wrapper{
-    margin: auto 38px;
-    width: 93%;
-  }
+
   .main{
     padding: 41px 52% 116px 0px;
     height: 444px;
@@ -299,28 +305,29 @@ h1{
     display: inline-block;
     font: 14px/23px 'Roboto',arial,helvetica,sans-serif;
     color: #fff;
-    padding: 15px 22px 15px 21px;
+
     background: #0056EC;
     text-decoration: none;
     border-radius: 4px;
     transition: opacity.5s;
 }
   .header{
-    margin-bottom:106px;
+
   }
   .menu__item {
     font-family: 'Roboto',arial,helvetica,sans-serif;
     font-size: 14px;
-    margin-right: 18px;
+
 }
   .menu{
     margin-left: auto;
     margin-top: 7px;
-    padding: 2px;
+
   }
   .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
     display: none;
    }
+
 }
 @media(max-width:1366px){
   .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
@@ -346,7 +353,9 @@ h1{
    }
    .menu{
      margin-left: 284px;
-     padding: 3px;
+
+     padding: 6px;
+
    }
    .wrapper{
      margin: auto 210px;
