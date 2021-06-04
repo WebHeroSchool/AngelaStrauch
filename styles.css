@@ -34,6 +34,10 @@ h1{
   animation: main__button 3s infinite;
 }
 
+body{
+  display: block;
+  margin: 8px;
+  
 @keyframes main__button {
 	0% {
 		transform: scale3d(1, 1, 1);
@@ -45,7 +49,6 @@ h1{
 		transform: scale3d(1, 1, 1);
 	}
 }
-
 
 
 .main__button:hover{
@@ -62,29 +65,31 @@ h1{
 .main-section{
   transition: opacity .5s;
   position: relative;
-  margin-right: 23px;
-  text-decoration: none;
-  font: 500 18px/22px Roboto,arial,helvetica,sans-serif;
   color:#000
 }
-.header{
+
+  
+.main-section{
   padding: 32px 2px 40px 1px;
   display:flex;
   justify-content: space-between;
   margin-bottom: 100px;
   }
+
 .wrapper{
   margin:auto 187px;
   width:80%;
 }
 .menu{
   display: inline-block;
+
   margin-left: auto;
   margin-top: 6px;
 }
 .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
   display: none;
  }
+
 .logo{
   display: inline-block;
 }
@@ -102,6 +107,12 @@ h1{
   /*position: relative;*/
   /*padding-left: 44px;*/
   /*font: bold 24px/31px pt_serif,arial,helvetica,sans-serif;*/
+
+  width: 190px;
+  height: 35px;
+  background: url('img/logo.svg');
+
+
   width: 189px;
   height: 35px;
   background: url('img/logo.svg');
@@ -127,13 +138,13 @@ h1{
   left: 8px;
   top:56%;
   background: #C8DBFB;
+
 }
 .logo__circle_color_dark-blue{
   background: #0056EC;
 }
 .logo__circle_color_dark-blue{
   background: #0056EC;
-}*/
 /*.menu{
   display: flex;
   align-items: center;
@@ -325,6 +336,7 @@ h1{
    }
 }
 
+
 @media(max-width:768px){
   .menu{
     display: none;
@@ -345,7 +357,7 @@ h1{
     margin-top: -26px;
     width: 88%;
   }
-  .main__title{
+  .main__titel{
     margin:19px 39px 0px 1px;
     font: bold 30px/39px PT serif,arial,helvetica,sans-serif;
   }
