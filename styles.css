@@ -4,7 +4,6 @@
 h1{
   font-family: Roboto, sans-serif;
 }
-
 .main{
   padding:0 53% 100px 0;
   background: top right no-repeat url(img/mainImg.svg);
@@ -83,7 +82,6 @@ body{
 }
 
 
-
 .main__button:hover{
   opacity: .5;
 }
@@ -115,12 +113,14 @@ body{
 }
 .menu{
   display: inline-block;
+
   margin-left: auto;
   margin-top: 6px;
 }
 .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
   display: none;
  }
+
 .logo{
   display: inline-block;
 }
@@ -194,7 +194,6 @@ body{
 }
 .logo__circle_color_dark-blue{
   background: #0056EC;
-
 }
 .logo__circle_color_dark-blue{
   background: #0056EC;
@@ -339,6 +338,93 @@ body{
 }
 
 
+
+@media(max-width:1025px){
+  .logo{
+    padding:0px;
+  }
+  .main{
+    padding: 41px 52% 116px 0px;
+    height: 444px;
+    background-size: 520px;
+  }
+  .main__title {
+    font: 700 51px/66px PT Serif,arial,helvetica,sans-serif;
+    margin: 6px 0 34px;
+}
+.main__subtitel {
+    margin: 0 0 37px 3px;
+    font: 18px/22px 'Roboto',arial,helvetica,sans-serif;
+}
+.main__button {
+    display: inline-block;
+    font: 14px/23px 'Roboto',arial,helvetica,sans-serif;
+    color: #fff;
+    padding: 15px 26px 11px 20px;
+    background: #0056EC;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: opacity.5s;
+}
+  .header{
+    margin-bottom:0;
+  }
+  .menu__item {
+    font-family: 'Roboto',arial,helvetica,sans-serif;
+    font-size: 14px;
+    margin-right: 23px;
+}
+  .menu{
+    margin-left: auto;
+    margin-top: 7px;
+  }
+  .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
+    display: none;
+   }
+  .wrapper{
+    margin: auto;
+    width: 93%;
+  }
+}
+@media(max-width:1366px){
+  .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
+    display: none;
+   }
+   .header{
+     margin-bottom: 106px;
+     padding:32px 20px 0 1px;
+   }
+   .main__title{
+     margin:0 0 44px;
+     font: 700 50px/63px PT Serif,arial,helvetica,sans-serif;
+     padding: 0;
+   }
+   .main{
+     padding: 33px 56% 95px 0;
+     height: 339px;
+     background-size: 517px;
+     background-position: 414px;
+   }
+   .main__subtitel{
+     font: 18px/21px 'Roboto',arial,helvetica,sans-serif;
+   }
+   .menu{
+     margin-left: 284px;
+     padding: 6px;
+   }
+   .wrapper{
+     margin: auto 210px;
+   }
+   .menu__item{
+     margin-right: 23px;
+     font: 500 14px/22px 'Roboto',arial,helvetica,sans-serif;
+   }
+   .main__button{
+    font: 14px/18px 'Roboto',arial,helvetica,sans-serif;
+    padding: 15px 22px 11px 22px;
+   }
+}
+
 @media(max-width:768px){
   .menu{
     display: none;
@@ -467,6 +553,7 @@ body{
 .menu__itemb{
   transition-duration: .25s;
  }
+
  /*убираем горизонтальный скролл*/
  html, body { max-width: 100%; overflow-x: hidden;
 }
@@ -505,5 +592,4 @@ body{
   animation-iteration-count: infinite;
   animation-fill-mode: none;
   animation-play-state: running;
-
 }
