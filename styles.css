@@ -104,9 +104,7 @@ body{
   width: 190px;
   height: 35px;
   background: url('img/logo.svg');
-
   /*position: relative;*/
-
   /*padding-left: 44px;*/
   /*font: bold 24px/31px pt_serif,arial,helvetica,sans-serif;*/
 
@@ -179,6 +177,58 @@ body{
 .menu__item:hover:after, .menu__item_active::after{
   opacity: 1;
 }
+
+@media screen and (max-width:769px) and (min-width:1024px){
+  .logo{
+    padding:0px;
+  }
+  .wrapper{
+    margin: auto 42px;
+    width: 93%;
+  }
+  .main{
+    padding: 41px 52% 116px 0px;
+    height: 434px;
+    background-size: 522px;
+    margin-right: -126px;
+  }
+  .main__title {
+    font: 700 50px/62px PT Serif,arial,helvetica,sans-serif;
+    margin: 6px 0 34px;
+}
+.main__subtitel {
+    margin: 42px 44px 30px -4px;
+    font: 18px/23px Roboto,arial,helvetica,sans-serif;
+}
+.main__button {
+    display: inline-block;
+    font: 14px/21px Roboto,arial,helvetica,sans-serif;
+    color: #fff;
+    padding: 12px 26px 11px 12px;
+    background: #0056EC;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: opacity.5s;
+    margin: 9px 0 0 1px;
+}
+  .header{
+    margin-bottom:4px;
+  }
+  .menu__item {
+    font-family: 'Roboto',arial,helvetica,sans-serif;
+    font-size: 14px;
+    margin-right: 18px;
+}
+  .menu{
+    margin-left: auto;
+    margin-top: 7px;
+    padding: 2px;
+  }
+  .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
+    display: none;
+   }
+}
+@media screen and (max-width:1024px) and (min-width:1366px){
 .background{
   size:cover;
 }
@@ -202,7 +252,7 @@ body{
      height: 443px;
      background-size: 520px;
      background-position: 414px;
-   }
+     
    .main__subtitel{
      font: 18px/20px Roboto,arial,helvetica,sans-serif;
      margin: 35px 160px 41px 0px;
@@ -286,89 +336,6 @@ body{
    }
 }
 
-
-
-  .main{
-    padding: 41px 52% 116px 0px;
-    height: 444px;
-    background-size: 520px;
-  }
-  .main__title {
-    font: 700 51px/66px PT Serif,arial,helvetica,sans-serif;
-    margin: 6px 0 34px;
-}
-.main__subtitel {
-    margin: 0 0 37px 3px;
-    font: 18px/22px 'Roboto',arial,helvetica,sans-serif;
-}
-.main__button {
-    display: inline-block;
-    font: 14px/23px 'Roboto',arial,helvetica,sans-serif;
-    color: #fff;
-
-    background: #0056EC;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: opacity.5s;
-}
-  .header{
-
-  }
-  .menu__item {
-    font-family: 'Roboto',arial,helvetica,sans-serif;
-    font-size: 14px;
-
-}
-  .menu{
-    margin-left: auto;
-    margin-top: 7px;
-
-  }
-  .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
-    display: none;
-   }
-
-}
-@media(max-width:1366px){
-  .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
-    display: none;
-   }
-   .header{
-     margin-bottom: 106px;
-     padding:32px 20px 0 1px;
-   }
-   .main__title{
-     margin:0 0 44px;
-     font: 700 50px/63px PT Serif,arial,helvetica,sans-serif;
-     padding: 0;
-   }
-   .main{
-     padding: 33px 56% 95px 0;
-     height: 339px;
-     background-size: 517px;
-     background-position: 414px;
-   }
-   .main__subtitel{
-     font: 18px/21px 'Roboto',arial,helvetica,sans-serif;
-   }
-   .menu{
-     margin-left: 284px;
-
-     padding: 6px;
-
-   }
-   .wrapper{
-     margin: auto 210px;
-   }
-   .menu__item{
-     margin-right: 23px;
-     font: 500 14px/22px 'Roboto',arial,helvetica,sans-serif;
-   }
-   .main__button{
-    font: 14px/18px 'Roboto',arial,helvetica,sans-serif;
-    padding: 15px 22px 11px 22px;
-   }
-}
 
 @media(max-width:768px){
   .menu{
