@@ -1,34 +1,44 @@
-.title{
-  font-family: Roboto;
-}
-h1{
-  font-family: Roboto, sans-serif;
-}
-.body{
+
+body {
   margin: 0;
 }
-.main{
+.header {
+  padding: 32px 2px 40px 1px;
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  }
+.wrapper {
+  margin:auto 187px;
+  width:80%;
+}
+
+body{
+  margin: 0;
+}
+.main {
   padding:39px 63% 115px 0;
   background: center right no-repeat url(img/mainImg.svg);
   height: 555px;
   background-size:50%;
 }
-.main__title{
+.main__title {
   margin:10px 0 39px 0;
   font: 700 66px/87px PT Serif,arial,helvetica,sans-serif;
   padding:51px 0 1px 0;
 }
-.main__title1{
+.main__title1 {
   margin-left:-18px;
 }
-.main__title-text_highlight{
+.main__title-text_highlight {
   background:linear-gradient(to top,#ECF3FF 82%, #fff 82% 100%);
 }
-.main__subtitel{
+
+.main__subtitel {
   margin:0px 140px 2px -1px;
   font: 22px/23px Roboto,arial,helvetica,sans-serif;
 }
-.main__button{
+.main__button {
   display: inline-block;
   font: 18px/32px Roboto,arial,helvetica,sans-serif;
   color: #fff;
@@ -53,10 +63,10 @@ h1{
 	}
 }
 
-.main__button:hover{
+.main__button:hover {
   opacity: .5;
 }
-.menu__item{
+.menu__item {
   transition: opacity .5s;
   position: relative;
   margin-right: 22px;
@@ -64,6 +74,7 @@ h1{
   font: 500 18px/22px Roboto,arial,helvetica,sans-serif;
   color:#000
 }
+
 .header{
   padding: 32px 2px 40px 1px;
   display:flex;
@@ -74,29 +85,26 @@ h1{
   margin:auto 187px;
   width:80%;
 }
-.menu{
+
+.menu {
   display: inline-block;
   margin-left: auto;
   margin-top: 7px;
   margin-right: -1px;
 }
-.menu__btn, #menu__toggle, .menu__box, .menu__itemb{
+.menu__btn, #menu__toggle, .menu__box, .menu__itemb {
   display: none;
  }
 .logo{
   display: inline-block;
 }
 .logo{
-  /*position: relative;*/
-
-  /*padding-left: 44px;*/
-  /*font: bold 24px/31px pt_serif,arial,helvetica,sans-serif;*/
   width: 189px;
   height: 35px;
   background: url('img/logo.svg');
 }
 
-.center-img{
+.center-img {
   background: no-repeat url(img/Dots.png);
   background-size: 100%;
   width: 34px;
@@ -104,34 +112,10 @@ h1{
   margin: 108px auto;
   margin-bottom: 38px;
 }
-
-
-/*.logo__circle{
-  position: absolute;
-  left:0;
-  top: 50%;
-  transform:translateY(-50%);
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  opacity: .7;
-}
-.logo__circle_color_blue{
-  left: 8px;
-  top:56%;
-  background: #C8DBFB;
-}
-.logo__circle_color_dark-blue{
-  background: #0056EC;
-}*/
-/*.menu{
-  display: flex;
-  align-items: center;
-}*/
-.menu__item:last-child{
+.menu__item:last-child {
   margin-right: 0;
 }
-.menu__item_active::after{
+.menu__item_active::after {
   position: absolute;
   display: block;
   content: '';
@@ -141,10 +125,10 @@ h1{
   background: #0056EC;
   transition: opacity .5s,width .5s;
 }
-.menu__item:hover{
+.menu__item:hover {
   opacity: .5;
 }
-.menu__item:hover:after{
+.menu__item:hover:after {
   position:absolute;
   left:0;
   display: block;
@@ -153,77 +137,81 @@ h1{
   height: 3px;
   background: #0056EC;
 }
-.menu__item:hover:after, .menu__item_active::after{
+.menu__item:hover:after, .menu__item_active::after {
   opacity: 1;
 }
 .background{
   size:cover;
 }
 
-@media(max-width:1366px){
-  .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
+
+@media(max-width:1366px) {
+  .menu__btn, #menu__toggle, .menu__box, .menu__itemb {
     display: none;
    }
-   .header{
+   .header {
      margin-bottom:0px;
      padding:32px 153px 40px 1px;
    }
-   .main__title{
+   .main__title {
      margin:0 478px 44px 0;
      font: 700 50px/64px PT Serif,arial,helvetica,sans-serif;
      padding-top:56px 0 0 0;
      margin-top:8px;
    }
-   .main{
+
+   .main {
      padding: 39px 0 115px 0;
      height: 443px;
      background-size: 48%;
      background-position: 414px;
    }
-   .main__subtitel{
+   .main__subtitel {
      font: 18px/20px Roboto,arial,helvetica,sans-serif;
      margin: 0px 688px 0px 1px;
    }
-   .menu{
+   .menu {
      margin-left: auto;
      margin-top: 5px;
      padding: 3px;
    }
-   .wrapper{
+   .wrapper {
      margin: auto 210px;
      width: 80%;
    }
-   .menu__item{
+   .menu__item {
      margin-right: 22px;
      font: 500 14px/22px Roboto,arial,helvetica,sans-serif;
    }
-   .main__button{
+   .main__button {
     font: 14px/20px Roboto,arial,helvetica,sans-serif;
     padding: 12px 25px 12px 18px;
     margin: 41px 3px 0 1px;
    }
-   .logo{
+   .logo {
      margin-left: 0px;
    }
-   .main__title1{
+
+   .main__title1 {
      margin-left:-13px;
    }
-   .center-img{
+   .center-img {
      display: block;
      margin: 10px 0 -10px 450px;
    }
 }
 
-@media(max-width:1024px){
-  .logo{
+@media(max-width:1024px) {
+  .logo {
     padding:0px;
     margin-left: -5px;
   }
-  .wrapper{
+  .wrapper {
     margin: auto 42px;
     width: 93%;
   }
-  .main{
+
+  .main {
     padding: 41px 348px 116px 0px;
     height: 436px;
     background-size: 516px;
@@ -248,7 +236,7 @@ h1{
     transition: opacity.5s;
     margin: 42px 0 0 0px;
 }
-  .header{
+  .header {
     margin-bottom: 4px;
     width: 87%;
   }
@@ -257,42 +245,41 @@ h1{
     font-size: 14px;
     margin-right: 22px;
 }
-  .menu{
+  .menu {
     margin-right:-111px;
     margin-top: 8px;
     padding: 0px;
   }
-  .menu__btn, #menu__toggle, .menu__box, .menu__itemb{
+  .menu__btn, #menu__toggle, .menu__box, .menu__itemb {
     display: none;
    }
-   .center-img{
+   .center-img {
      display: block;
      margin: 10px 0 -10px 446px;
    }
 }
 
-@media(min-width:769px) and (max-width:1023px){
-  .main{
+@media(min-width:769px) and (max-width:1023px) {
+  .main {
     background-size: 50%;
   }
-  .header{
+  .header {
     padding-left: 30px;
+  }
 }
-
-}
-@media(max-width:768px){
-  .menu{
+@media(max-width:768px) {
+  .menu {
     display: none;
   }
-  .logo{
+  .logo {
     width:45px;
     margin-top: 16px;
   }
-  .header{
+  .header {
     margin-bottom:0px;
     padding: 0px 0 55px 0;
   }
-  .main{
+  .main {
     text-align: center;
     padding: 44% 0 0 43px;
     background-size: 87%;
@@ -300,32 +287,33 @@ h1{
     margin-top: -27px;
     width: 88%;
   }
-  .main__title{
+
+  .main__title {
     margin:72px 43px 0px 1px;
     font: bold 30px/39px PT serif,arial,helvetica,sans-serif;
   }
-  .main__title1{
+  .main__title1 {
     margin-left:-9px;
   }
-  .main__subtitel{
+  .main__subtitel {
     margin:32px 41px 0 0px;
     font: 500 16px/19px Roboto,arial,helvetica,sans-serif;
   }
-  .main__button{
+  .main__button {
     font: 500 14px/16px Roboto,arial,helvetica,sans-serif;
     margin: 23px 40px 0 0;
     padding: 16px 30px 14px 16px;
     }
-  .wrapper{
+  .wrapper {
     margin:auto;
     width: 88%;
   }
 /*скрываем чекбокс*/
-#menu__toggle{
+#menu__toggle {
   opacity: 0;
 }
 /*стилизуем кнопку*/
-.menu__btn{
+.menu__btn {
   display: flex;
   align-items: center;
   position: fixed;
@@ -339,23 +327,23 @@ h1{
 /*добавляем гамбугер*/
 .menu__btn >span,
 .menu__btn >span::before,
-.menu__btn >span::after{
+.menu__btn >span::after {
   display: block;
   position: absolute;
   width: 100%;
   height: 3px;
   background-color: #0056EC;
 }
-.menu__btn > span::before{
+.menu__btn > span::before {
   content:'';
   top: -8px;
 }
-.menu__btn > span::after{
+.menu__btn > span::after {
   content: '';
   top: 8px;
 }
 /*контейнер меню*/
-.menu__box{
+.menu__box {
   display: block;
   position: fixed;
   visibility: hidden;
@@ -372,42 +360,42 @@ h1{
   z-index: 100;
 }
 /*элементы меню*/
-.menu__itemb{
+.menu__itemb {
   display: block;
-  padding: 13px 24px;
+  padding: 13px 10px 13px 15px;
   color: #000;
   font-family: 'Roboto',arial,helvetica,sans-serif;
   font-size:29px;
   font-weight: 600;
   text-decoration: none;
 }
-.menu__itemb:hover{
+.menu__itemb:hover {
   background-color: #CFD8DC;
 }
-#menu__toggle:checked ~ .menu__btn > span{
+#menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
 }
-#menu__toggle:checked ~ .menu__btn > span::before{
+#menu__toggle:checked ~ .menu__btn > span::before {
   top:0;
   transform: rotate(0);
 }
-#menu__toggle:checked ~ .menu__btn > span::after{
+#menu__toggle:checked ~ .menu__btn > span::after {
   top:0;
   transform: rotate(90deg);
 }
-#menu__toggle:checked ~ .menu__box{
+#menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
 }
 .menu__btn > span,
 .menu__btn > span::before;
-.menu__btn > span::after{
+.menu__btn > span::after {
    transition-duration: .25s;
 }
-.menu__box{
+.menu__box {
   transition-duration: .25s;
 }
-.menu__itemb{
+.menu__itemb {
   transition-duration: .25s;
  }
  /*убираем горизонтальный скролл*/
@@ -434,7 +422,7 @@ h1{
   }
 }
 /*Добавление анимации к элементу*/
-.element{
+.element {
   display:inlines;
   height: 100px;
   width: 100px;
@@ -449,7 +437,4 @@ h1{
   animation-fill-mode: none;
   animation-play-state: running;
 
-}
-.center-img{
-  display:none;
 }
